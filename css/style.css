@@ -1,0 +1,143 @@
+body {
+	background: #fff;
+	font-family: 'Manrope', sans-serif;
+}
+
+.c_main {
+	margin-top: 5%;
+}
+
+#c_comments {
+	display: flex;
+	flex-direction: column;
+	margin: 0 auto;
+}
+
+@media (max-width: 576px) {
+	#c_comments {
+		width: 80%;
+	}
+}
+
+@media (max-width: 767px) {
+	#c_comments {
+		width: 70%;
+	}
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+	#c_comments {
+		width: 60%;
+	}
+}
+
+@media (min-width: 991px) and (max-width: 1199px) {
+	#c_comments {
+		width: 45%;
+	}
+}
+
+@media (min-width: 1200px) {
+	#c_comments {
+		width: 35%;
+	}
+}
+
+.c_comment {
+	border: 1px solid #4e6fd2;
+    box-shadow: 0px 0px 7px 0px rgb(0 0 0 / 45%);
+    text-align: justify;
+    padding: 15px;
+    background: #5d80e7;
+    margin-top: 5px;
+    opacity: 0;
+    transition: .5s;
+    animation: show .3s 1;
+    animation-fill-mode: forwards;
+    animation-delay: .1s;
+    border-radius: 25px;	
+}
+
+@keyframes show {
+	0% {
+		opacity: 0;
+	}
+
+	30% {
+		opacity: .3;
+	}
+
+	50% {
+		opacity: .5;
+	}
+
+	100% {
+		opacity: 1;
+	}
+}
+
+.c_date {
+	color: #333;
+	font-size: 13px;
+	vertical-align: middle;
+}
+
+h2 {
+	color: #fff;
+}
+
+.c_name {
+	color: #111;
+	font-size: 14px;
+}
+
+.c_text {
+	margin-top: 5px;
+	color: #fff;
+	font-size: 14px;
+}
+
+.c_input {
+    width: 100%;
+    outline: none;
+    border: 1px solid #cecece;
+    border-radius: 7px;
+    min-height: 30px;
+    margin: 5px auto;
+    color: #000;
+}
+.c_fromBlock {
+	text-align: left;
+}
+
+.c_placeholder {
+	color: #fff;
+	font-size: 14px;
+}
+
+.c_button {
+	color: #fff;
+    background: #2d3188;
+    padding: 15px;
+    border: 1px solid #2e3288;
+    outline: 0!important;
+    display: block;
+    margin: 0 auto;
+    width: 101%;
+    margin-top: 5px;
+    font-size: 15px;
+    cursor: pointer;
+    border-radius: 8px;
+	transition: 0.3s;
+}
+
+.c_button:hover,.c_button:focus,.c_button:active {
+	outline: 0!important;
+	border: 1px solid #5157ce;
+	background: #40448d;
+	transition: 0.3s;
+}
+
+.c_error {
+	border: 1px solid red;
+}

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;600;700&display=swap" rel="stylesheet">
+	<title>Скрипт комментариев</title>
+</head>
+
+<body>
+	<div class="c_main">
+		<div id="c_comments">
+			<div class="c_comment" id="с_success">
+				<div class="c_fromBlock"><span class="c_placeholder">Ваше Имя:</span>
+					<br>
+					<input class="c_input" id="c_name" type="text">
+				</div>
+				<br>
+				<div class="c_fromBlock"><span class="c_placeholder">Ваш Отзыв:</span>
+					<br>
+					<textarea id="c_text" class="c_input"></textarea>
+				</div>
+				<div>
+					<button class="c_button">Отправить</button>
+				</div>
+			</div>
+			<div id="c_comments2"></div>
+		</div>
+	</div>
+	<script src="js/comm.js"></script>
+</body>
+
+</html>
